@@ -1,0 +1,53 @@
+<!-- the header part -->
+<header class="site-header" style="background-image: url('{% if page.header_img %}{{ page.header_img }}{% else %}{{ site.header_img  }}{% endif %}');">
+  <div class="site-header-wrapper">
+
+    <!-- header top -->
+    <div class="header-top">
+      <nav>
+      <a href="{{ site.baseurl }}/" class="header-top-title">{{ site.title }}</a>
+        <div class="header-nav-container">
+        <!-- site.pages include all site except pages in post -->
+          {% assign allpages = site.pages | sort: "nav_order" %}
+          {% for my_page in allpages %}
+          {% if my_page.nav_bool %}
+          <a class="header-nav-link capital" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
+          {% endif %}
+          {% endfor %}
+        </div>
+      </nav>
+    </div>
+    <!-- end of header top -->
+
+    <!-- header content -->
+    <div class="header-content">
+      {% if page.tags %}
+
+      <!-- page tags -->
+      <div class="tags">
+        {% for one in page.tags %}
+          <a href="{{ site.baseurl }}/tags/#{{ one }}" title="{{ one }}" class="tag">{{ one }}</a>
+        {% endfor %}
+      </div>
+      <!-- page tags end -->
+
+      <!-- page meta -->
+      {% endif %}
+      {% if page.title %}
+      <h1>{{ page.title }}{% else %}{{ site.title }}</h1>
+      {% endif %}
+
+      {% if page.subtitle %}
+      <h2>{{ page.subtitle }}</h2>
+      {% endif %}
+
+      {% if page.date %}
+      <p>Posted on {{ page.date | date: "%b %-d %Y" }}</p>
+      {% endif %}
+      <!-- page meta end -->
+    </div>
+    <!-- end of header content -->
+
+  </div>
+</header>
+<!-- end of header -->
