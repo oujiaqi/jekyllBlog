@@ -47,7 +47,6 @@ function adjust() {
 
 
 function toggle() {
-	console.log(this);
 	var h = document.getElementById("header-nav");
 	if (!toggleB) {
 		h.style.display = "block";
