@@ -14,4 +14,4 @@ header_img: /assets/imgs/naruto2.jpg
 
 Here is the main content.
 
-You content will display here.
+Your content will display here.

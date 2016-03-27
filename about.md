@@ -9,12 +9,11 @@ extra_css: /assets/css/calendar.css
 header_img: /assets/imgs/naruto.jpg
 ---
 
-This web templete is based on jekyll. Thanks for jekyll.
+This web template is based on jekyll. Thanks for jekyll.
 
-The author is a **sunshine** boy who love ***Naruto***, ***Basketball*** and ***Singing***.
+The author is a **sunshine** boy who loves ***Naruto***, ***Basketball*** and ***Singing***.
 
-Ah, he is a boy who **really** love ***Naruto***, ***Basketball*** and ***Sing***.
+And he believes that coding changes the world.
 
-You could download this templete from my [github](https://github.com/oujiaqi/jekyllBlog).
-
+You could download this template from my [github](https://github.com/oujiaqi/jekyllBlog).
 
